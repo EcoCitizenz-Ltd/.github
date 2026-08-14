@@ -73,8 +73,7 @@ EcoCitizenz Ltd builds ECZ-ID: resolver-first identity, authority, state and evi
 
 ## Public proof
 
-**ECZ-ID VERIFIED - ECZ-GB-RBS1NW**
-
+**ECZ-ID public identity evidence - ECZ-GB-RBS1NW**
 [View current public identity and evidence](https://resolver.ecocitizenz.org/passport/ECZ-GB-RBS1NW)
 
 Resolver evidence supports review of current published state. The relying party applies its own policy before reliance.
