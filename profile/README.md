@@ -16,7 +16,25 @@ EcoCitizenz Ltd builds ECZ-ID: resolver-first identity, authority, state and evi
 | Review software / SBOM evidence | [Software Supply Chain Evidence](https://github.com/EcoCitizenz-Ltd/eczid-software-supply-chain-evidence) |
 | Assess MCP production readiness | [MCP Readiness](https://github.com/EcoCitizenz-Ltd/eczid-mcp-readiness) |
 | Review API identity | [API Passport Starter](https://github.com/EcoCitizenz-Ltd/eczid-api-passport-starter) |
-| Manage customer machine-trust estates | [MSP / MSSP Machine Trust Toolkit](https://github.com/EcoCitizenz-Ltd/eczid-msp-machine-trust-toolkit) |
+| Manage machine trust across customer estates | [Run the free MSP / MSSP Machine Trust Check](https://msp.ecocitizenz.com/trust-check?utm_source=github&utm_medium=organization&utm_campaign=msp-machine-trust&utm_content=problem-router) |
+
+---
+
+## MSP / MSSP Machine Trust
+
+**Know which machine actors can act across which customer environments, who authorised them, and what evidence can be re-checked.**
+
+Start without an account or sales call:
+
+[**Run the free Machine Trust Check**](https://msp.ecocitizenz.com/trust-check?utm_source=github&utm_medium=organization&utm_campaign=msp-machine-trust&utm_content=free-check)
+
+Need a human-reviewed starting record for the disclosed client estate?
+
+[**Review the £395 Client-Estate Machine Trust Baseline**](https://msp.ecocitizenz.com/audit?utm_source=github&utm_medium=organization&utm_campaign=msp-machine-trust&utm_content=baseline)
+
+Prefer technical resources first?
+
+[Explore the MSP / MSSP Machine Trust Toolkit](https://github.com/EcoCitizenz-Ltd/eczid-msp-machine-trust-toolkit)
 
 ---
 
