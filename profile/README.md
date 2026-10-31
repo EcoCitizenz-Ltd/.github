@@ -8,6 +8,7 @@ EcoCitizenz Ltd builds ECZ-ID: resolver-first identity, authority, state and evi
 
 | I need to... | Start here |
 |---|---|
+| Get identity for a machine I operate | [Choose a free ECZ-ID Passport](https://developers.ecocitizenz.com/get-started/free-passport/?utm_source=github&utm_medium=organization&utm_campaign=free-passports&utm_content=problem-router) |
 | Inspect an MCP server | [MCP Security Toolkit](https://github.com/EcoCitizenz-Ltd/eczid-mcp-security-toolkit) |
 | Understand what an AI agent can reach | [Agent Authority Toolkit](https://github.com/EcoCitizenz-Ltd/eczid-agent-authority-toolkit) |
 | Establish organisational machine identity | [Business Passport & Machine Identity](https://github.com/EcoCitizenz-Ltd/eczid-business-passport-machine-identity) |
@@ -17,6 +18,16 @@ EcoCitizenz Ltd builds ECZ-ID: resolver-first identity, authority, state and evi
 | Assess MCP production readiness | [MCP Readiness](https://github.com/EcoCitizenz-Ltd/eczid-mcp-readiness) |
 | Review API identity | [API Passport Starter](https://github.com/EcoCitizenz-Ltd/eczid-api-passport-starter) |
 | Manage machine trust across customer estates | [Run the free MSP / MSSP Machine Trust Check](https://msp.ecocitizenz.com/trust-check?utm_source=github&utm_medium=organization&utm_campaign=msp-machine-trust&utm_content=problem-router) |
+
+---
+
+## Seven free machine Passport families
+
+ECZ-ID currently provides free Passport journeys for **Agent, MCP, Plugin, API, IoT, SDK, and Service & Workload**. The live acquisition journey takes no payment and creates a free Business Passport when an organisation does not already have one.
+
+[**Choose the right free Passport →**](https://developers.ecocitizenz.com/get-started/free-passport/?utm_source=github&utm_medium=organization&utm_campaign=free-passports&utm_content=primary-cta)
+
+A free Passport gives a machine a persistent identity and public location for current-state checking. It does not mean verified, assured, safe, secure, compliant, approved, certified or endorsed.
 
 ---
 
