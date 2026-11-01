@@ -1,0 +1,30 @@
+name: Validate ECZ-ID workflow distribution
+
+on:
+  pull_request:
+    paths:
+      - 'workflow-templates/**'
+      - '.github/workflows/eczid-*-reusable.yml'
+      - 'scripts/validate-eczid-distribution.mjs'
+      - '.github/workflows/validate-eczid-distribution.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workflow-templates/**'
+      - '.github/workflows/eczid-*-reusable.yml'
+      - 'scripts/validate-eczid-distribution.mjs'
+      - '.github/workflows/validate-eczid-distribution.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out distribution repository
+        uses: actions/checkout@v7
+
+      - name: Validate templates, metadata and reusable workflow references
+        run: node scripts/validate-eczid-distribution.mjs
