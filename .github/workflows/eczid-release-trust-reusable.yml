@@ -1,0 +1,70 @@
+name: ECZ-ID Release Trust — Reusable Evidence Review
+
+on:
+  workflow_call:
+    inputs:
+      release_ref:
+        description: Optional release/tag reference.
+        required: false
+        type: string
+        default: ''
+      artifact_locator:
+        description: Optional artifact/package locator.
+        required: false
+        type: string
+        default: ''
+      subject_digest:
+        description: Optional SHA-256 subject digest.
+        required: false
+        type: string
+        default: ''
+      provenance_status:
+        description: VERIFIED | NOT_VERIFIED | NOT_CHECKED | NOT_AVAILABLE
+        required: false
+        type: string
+        default: NOT_CHECKED
+      sbom_status:
+        description: VERIFIED | NOT_VERIFIED | NOT_CHECKED | NOT_AVAILABLE
+        required: false
+        type: string
+        default: NOT_CHECKED
+      passport_family:
+        description: Optional plugin | sdk | service-workload family hint.
+        required: false
+        type: string
+        default: ''
+      ecz_id:
+        description: Optional declared ECZ-ID machine Passport reference.
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: read
+  attestations: read
+
+jobs:
+  release-trust:
+    name: Review release identity, provenance and supply-chain evidence
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: ECZ-ID Release Identity & Provenance
+        uses: EcoCitizenz-Ltd/eczid-release-identity-provenance@v1
+        with:
+          release-ref: ${{ inputs.release_ref }}
+          artifact-locator: ${{ inputs.artifact_locator }}
+          subject-digest: ${{ inputs.subject_digest }}
+          provenance-status: ${{ inputs.provenance_status }}
+          sbom-status: ${{ inputs.sbom_status }}
+          passport-family: ${{ inputs.passport_family }}
+          ecz-id: ${{ inputs.ecz_id }}
+
+      - name: ECZ-ID Supply Chain Evidence
+        uses: EcoCitizenz-Ltd/eczid-supply-chain-evidence@v1
+        with:
+          family: ${{ inputs.passport_family }}
+          provenance-status: ${{ inputs.provenance_status }}
+          sbom-status: ${{ inputs.sbom_status }}
