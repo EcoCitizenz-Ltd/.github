@@ -1,6 +1,6 @@
 {
   "name": "ECZ-ID API Trust",
   "description": "Review API identity and current-state declarations without turning ECZ-ID into a generic API vulnerability scanner.",
-  "iconName": "octicon-plug",
+  "iconName": "octicon plug",
   "categories": ["Security", "Automation", "Continuous integration"]
 }
