@@ -1,6 +1,6 @@
 {
   "name": "ECZ-ID Agentic Workflow Trust",
   "description": "Review Agentic Workflow authority, tools, safe outputs and compile-pair evidence without executing the agent.",
-  "iconName": "octicon-copilot",
+  "iconName": "octicon copilot",
   "categories": ["Security", "Automation", "Continuous integration"]
 }
