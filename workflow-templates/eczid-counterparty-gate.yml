@@ -1,0 +1,22 @@
+name: ECZ-ID Counterparty Gate
+
+on:
+  workflow_dispatch:
+    inputs:
+      ecz_id:
+        description: Counterparty ECZ-ID to re-check
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  counterparty:
+    name: Review declared counterparty identity and currentness
+    runs-on: ubuntu-latest
+    steps:
+      - name: ECZ-ID Counterparty Gate
+        uses: EcoCitizenz-Ltd/eczid-counterparty-gate@v1
+        with:
+          ecz-id: ${{ inputs.ecz_id }}
