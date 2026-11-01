@@ -1,0 +1,6 @@
+{
+  "name": "ECZ-ID Website Security",
+  "description": "Run a bounded current public website observation after deployment or on a schedule, with one evidence-based next step.",
+  "iconName": "octicon-shield-check",
+  "categories": ["Security", "Deployment", "Automation"]
+}
