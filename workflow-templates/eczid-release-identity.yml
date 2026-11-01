@@ -1,0 +1,21 @@
+name: ECZ-ID Release Identity & Provenance
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  attestations: read
+
+jobs:
+  release-identity:
+    name: Connect release identity to current evidence
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: ECZ-ID Release Identity & Provenance
+        uses: EcoCitizenz-Ltd/eczid-release-identity-provenance@v1
