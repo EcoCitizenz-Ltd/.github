@@ -1,0 +1,6 @@
+{
+  "name": "ECZ-ID Trust Delta",
+  "description": "Compare normalized workflow and agentic trust evidence with a reviewed baseline without retaining raw source.",
+  "iconName": "octicon-history",
+  "categories": ["Security", "Automation", "Continuous integration"]
+}
