@@ -1,6 +1,6 @@
 {
   "name": "ECZ-ID Supply Chain Evidence",
   "description": "Normalize existing SBOM, package, lockfile, provenance and machine-identity evidence without replacing native scanners or attestations.",
-  "iconName": "octicon-package-dependents",
+  "iconName": "octicon package-dependents",
   "categories": ["Security", "Automation", "Continuous integration"]
 }
