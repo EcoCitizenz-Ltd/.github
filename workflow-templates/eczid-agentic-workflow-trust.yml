@@ -1,0 +1,27 @@
+name: ECZ-ID Agentic Workflow Trust
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/**/*.md'
+      - '.github/workflows/**/*.lock.yml'
+  push:
+    branches: [ $default-branch ]
+    paths:
+      - '.github/workflows/**/*.md'
+      - '.github/workflows/**/*.lock.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  agentic-workflow-trust:
+    name: Review agentic workflow authority and compile-pair evidence
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: ECZ-ID Agentic Workflow Trust
+        uses: EcoCitizenz-Ltd/eczid-agentic-workflow-trust@v1
