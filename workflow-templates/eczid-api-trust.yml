@@ -1,0 +1,26 @@
+name: ECZ-ID API Trust
+
+on:
+  pull_request:
+    paths:
+      - '**/openapi*.yml'
+      - '**/openapi*.yaml'
+      - '**/openapi*.json'
+      - '**/swagger*.yml'
+      - '**/swagger*.yaml'
+      - '**/swagger*.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  api-trust:
+    name: Review API identity and current-state declarations
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: ECZ-ID API Trust
+        uses: EcoCitizenz-Ltd/eczid-api-trust@v1
