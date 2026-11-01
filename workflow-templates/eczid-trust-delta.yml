@@ -1,0 +1,31 @@
+name: ECZ-ID Trust Delta
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+      - '.eczid/github-trust-snapshot.json'
+  push:
+    branches: [ $default-branch ]
+    paths:
+      - '.github/workflows/**'
+      - '.eczid/github-trust-snapshot.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  trust-delta:
+    name: Compare current trust evidence with reviewed baseline
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: ECZ-ID Trust Delta
+        uses: EcoCitizenz-Ltd/eczid-trust-delta@v1
+        with:
+          baseline-path: .eczid/github-trust-snapshot.json
+          report-path: eczid-trust-delta.json
+          proposal-path: .eczid/github-trust-snapshot.proposed.json

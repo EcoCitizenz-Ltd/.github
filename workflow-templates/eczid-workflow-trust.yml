@@ -1,0 +1,25 @@
+name: ECZ-ID Workflow Trust
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+  push:
+    branches: [ $default-branch ]
+    paths:
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  workflow-trust:
+    name: Review workflow dependencies and currentness
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: ECZ-ID Workflow Trust
+        uses: EcoCitizenz-Ltd/eczid-workflow-trust@v1

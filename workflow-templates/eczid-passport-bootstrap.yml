@@ -1,0 +1,31 @@
+name: ECZ-ID Passport Bootstrap
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '**/package.json'
+      - '**/pyproject.toml'
+      - '**/go.mod'
+      - '**/Cargo.toml'
+      - '**/openapi*.yml'
+      - '**/openapi*.yaml'
+      - '**/openapi*.json'
+      - '.github/workflows/**'
+
+permissions:
+  contents: read
+
+jobs:
+  passport-bootstrap:
+    name: Identify the relevant free ECZ-ID Passport family
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: ECZ-ID Passport Bootstrap
+        uses: EcoCitizenz-Ltd/eczid-passport-bootstrap@v1
+        with:
+          family: auto
+          mode: check

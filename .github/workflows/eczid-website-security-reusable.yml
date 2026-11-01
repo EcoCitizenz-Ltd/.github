@@ -1,0 +1,28 @@
+name: ECZ-ID Website Security — Reusable Current-State Check
+
+on:
+  workflow_call:
+    inputs:
+      website:
+        description: Public hostname or HTTP(S) website URL to observe.
+        required: true
+        type: string
+      report_path:
+        description: Local JSON evidence report path.
+        required: false
+        type: string
+        default: eczid-website-security.json
+
+permissions:
+  contents: read
+
+jobs:
+  website-security:
+    name: Observe current public website state
+    runs-on: ubuntu-latest
+    steps:
+      - name: ECZ-ID Website Security
+        uses: EcoCitizenz-Ltd/eczid-website-security@v1
+        with:
+          website: ${{ inputs.website }}
+          report-path: ${{ inputs.report_path }}

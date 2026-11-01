@@ -1,0 +1,36 @@
+name: ECZ-ID Counterparty Gate
+
+on:
+  pull_request:
+    paths:
+      - '.eczid/counterparty.json'
+      - '.eczid/counterparties/**'
+  workflow_dispatch:
+    inputs:
+      manifest_path:
+        description: Local counterparty JSON manifest path
+        required: false
+        type: string
+        default: .eczid/counterparty.json
+      as_of:
+        description: Optional deterministic ISO timestamp for evidence-age review
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  counterparty:
+    name: Review declared counterparty identity and evidence currentness
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: ECZ-ID Counterparty Gate
+        uses: EcoCitizenz-Ltd/eczid-counterparty-gate@v1
+        with:
+          manifest-path: ${{ inputs.manifest_path || '.eczid/counterparty.json' }}
+          as-of: ${{ inputs.as_of }}
