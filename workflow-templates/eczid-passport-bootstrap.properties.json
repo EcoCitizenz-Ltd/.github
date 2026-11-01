@@ -2,5 +2,5 @@
   "name": "ECZ-ID Passport Bootstrap",
   "description": "Route supported machine subjects through the free Business Passport Parent gateway and one of seven free child Passport families without auto-issuing identity.",
   "iconName": "octicon id-badge",
-  "categories": ["Automation", "Security", "Continuous integration"]
+  "categories": ["Continuous integration", "Automation", "utilities"]
 }
