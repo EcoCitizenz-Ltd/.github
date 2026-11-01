@@ -1,0 +1,32 @@
+name: ECZ-ID Supply Chain Evidence
+
+on:
+  pull_request:
+    paths:
+      - '**/package-lock.json'
+      - '**/pnpm-lock.yaml'
+      - '**/yarn.lock'
+      - '**/poetry.lock'
+      - '**/Cargo.lock'
+      - '**/go.sum'
+      - '**/*sbom*.json'
+      - '**/*sbom*.xml'
+      - '**/*cyclonedx*.json'
+      - '**/*spdx*.json'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  attestations: read
+
+jobs:
+  supply-chain-evidence:
+    name: Normalize existing supply-chain identity and evidence
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: ECZ-ID Supply Chain Evidence
+        uses: EcoCitizenz-Ltd/eczid-supply-chain-evidence@v1
