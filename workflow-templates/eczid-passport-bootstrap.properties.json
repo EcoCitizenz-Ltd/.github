@@ -1,6 +1,6 @@
 {
   "name": "ECZ-ID Passport Bootstrap",
   "description": "Classify supported machine surfaces into the seven free ECZ-ID Passport families without auto-issuing identity.",
-  "iconName": "octicon-id-badge",
+  "iconName": "octicon id-badge",
   "categories": ["Automation", "Security", "Continuous integration"]
 }
