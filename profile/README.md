@@ -21,6 +21,37 @@ EcoCitizenz Ltd builds ECZ-ID: resolver-first identity, authority, state and evi
 
 ---
 
+## Run ECZ-ID directly in GitHub Actions
+
+All 13 public ECZ-ID Actions are Marketplace-listed and independently consumer-smoke-tested through stable `@v1` references. They return bounded, neutral evidence and one contextual next step. A missing ECZ-ID or Passport is not treated as unsafe, noncompliant or failed.
+
+### Core Actions
+
+| I need to... | GitHub Action |
+|---|---|
+| Review workflow dependencies, permissions and currentness | [Workflow Trust](https://github.com/EcoCitizenz-Ltd/eczid-workflow-trust) |
+| Review agentic workflow authority and reliance surfaces | [Agentic Workflow Trust](https://github.com/EcoCitizenz-Ltd/eczid-agentic-workflow-trust) |
+| Start the Parent-first machine identity path | [Passport Bootstrap](https://github.com/EcoCitizenz-Ltd/eczid-passport-bootstrap) |
+| Compare current evidence with an earlier state | [Trust Delta](https://github.com/EcoCitizenz-Ltd/eczid-trust-delta) |
+| Observe a public website's current security state | [Website Security](https://github.com/EcoCitizenz-Ltd/eczid-website-security) |
+| Review API identity and evidence surfaces | [API Trust](https://github.com/EcoCitizenz-Ltd/eczid-api-trust) |
+| Trace release identity and provenance evidence | [Release Identity & Provenance](https://github.com/EcoCitizenz-Ltd/eczid-release-identity-provenance) |
+| Review software supply-chain evidence | [Supply Chain Evidence](https://github.com/EcoCitizenz-Ltd/eczid-supply-chain-evidence) |
+| Apply a neutral evidence gate to a digital counterparty | [Counterparty Gate](https://github.com/EcoCitizenz-Ltd/eczid-counterparty-gate) |
+
+### MSP / MSSP Actions
+
+| I need to... | GitHub Action |
+|---|---|
+| Inventory AI-agent, MCP, plugin and workflow authority surfaces | [MSP AI & Agent Estate](https://github.com/EcoCitizenz-Ltd/eczid-msp-ai-agent-estate) |
+| Inventory machine actors across a managed repository | [MSP Machine Estate Inventory](https://github.com/EcoCitizenz-Ltd/eczid-msp-machine-estate-inventory) |
+| Produce a deterministic evidence pack for QBR / vCISO review | [MSP Evidence & QBR Pack](https://github.com/EcoCitizenz-Ltd/eczid-msp-evidence-qbr-pack) |
+| Compare current machine-trust evidence with an approved baseline | [MSP Standard Drift](https://github.com/EcoCitizenz-Ltd/eczid-msp-standard-drift) |
+
+Need persistent identity for the machine or service behind the evidence? [Choose the right free Passport](https://developers.ecocitizenz.com/get-started/free-passport/?utm_source=github&utm_medium=organization&utm_campaign=github-actions&utm_content=action-router). The path is Parent-first: use the existing Business Passport Parent or create the free Declared Parent, then issue the relevant free child Passport.
+
+---
+
 ## Seven free machine Passport families
 
 ECZ-ID currently provides free Passport journeys for **Agent, MCP, Plugin, API, IoT, SDK, and Service & Workload**. The live acquisition journey takes no payment and creates a free Business Passport when an organisation does not already have one.
