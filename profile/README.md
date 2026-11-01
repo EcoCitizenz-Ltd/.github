@@ -103,7 +103,7 @@ Prefer technical resources first?
 ## Public proof
 
 **ECZ-ID public identity evidence - ECZ-GB-RBS1NW**
-[View current public identity and evidence](https://resolver.ecocitizenz.org/passport/ECZ-GB-RBS1NW)
+[View current public identity and evidence](https://resolver.ecocitizenz.org/p/ECZ-GB-RBS1NW)
 
 Resolver evidence supports review of current published state. The relying party applies its own policy before reliance.
 
