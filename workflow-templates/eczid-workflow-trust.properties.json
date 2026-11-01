@@ -2,5 +2,5 @@
   "name": "ECZ-ID Workflow Trust",
   "description": "Review GitHub workflow dependencies, permissions and currentness evidence without uploading source.",
   "iconName": "octicon workflow",
-  "categories": ["Continuous integration", "code-quality", "Automation"]
+  "categories": ["continuous-integration", "code-quality", "Automation"]
 }
