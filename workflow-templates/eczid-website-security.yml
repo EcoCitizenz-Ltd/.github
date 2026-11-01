@@ -3,8 +3,8 @@ name: ECZ-ID Website Security
 on:
   workflow_dispatch:
     inputs:
-      url:
-        description: Public website URL to observe
+      website:
+        description: Public website URL or hostname to observe
         required: false
         type: string
   schedule:
@@ -18,22 +18,22 @@ jobs:
     name: Current public website evidence
     runs-on: ubuntu-latest
     steps:
-      - name: Resolve target URL
+      - name: Resolve target website
         id: target
         shell: bash
         env:
-          INPUT_URL: ${{ inputs.url }}
-          DEFAULT_URL: ${{ vars.ECZID_WEBSITE_URL }}
+          INPUT_WEBSITE: ${{ inputs.website }}
+          DEFAULT_WEBSITE: ${{ vars.ECZID_WEBSITE_URL }}
         run: |
           set -euo pipefail
-          target="${INPUT_URL:-${DEFAULT_URL:-}}"
+          target="${INPUT_WEBSITE:-${DEFAULT_WEBSITE:-}}"
           if [ -z "$target" ]; then
-            echo "Set repository variable ECZID_WEBSITE_URL or supply the workflow_dispatch url input." >&2
+            echo "Set repository variable ECZID_WEBSITE_URL or supply the workflow_dispatch website input." >&2
             exit 2
           fi
-          echo "url=$target" >> "$GITHUB_OUTPUT"
+          echo "website=$target" >> "$GITHUB_OUTPUT"
 
       - name: ECZ-ID Website Security
         uses: EcoCitizenz-Ltd/eczid-website-security@v1
         with:
-          url: ${{ steps.target.outputs.url }}
+          website: ${{ steps.target.outputs.website }}
