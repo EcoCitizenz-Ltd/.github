@@ -7,7 +7,7 @@ on:
         description: Public hostname or HTTP(S) website URL to observe.
         required: true
         type: string
-      report-path:
+      report_path:
         description: Local JSON evidence report path.
         required: false
         type: string
@@ -25,4 +25,4 @@ jobs:
         uses: EcoCitizenz-Ltd/eczid-website-security@v1
         with:
           website: ${{ inputs.website }}
-          report-path: ${{ inputs.report-path }}
+          report-path: ${{ inputs.report_path }}
