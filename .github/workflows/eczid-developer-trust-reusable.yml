@@ -1,0 +1,39 @@
+name: ECZ-ID Developer Trust — Reusable Review
+
+on:
+  workflow_call:
+    inputs:
+      passport_family:
+        description: agent | mcp | plugin | api | iot | sdk | service_workload | auto
+        required: false
+        type: string
+        default: auto
+      parent_ecz_id:
+        description: Optional declared Business Passport Parent ECZ-ID reference.
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  developer-trust:
+    name: Review workflows and route free machine identity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: ECZ-ID Workflow Trust
+        uses: EcoCitizenz-Ltd/eczid-workflow-trust@v1
+
+      - name: ECZ-ID Agentic Workflow Trust
+        uses: EcoCitizenz-Ltd/eczid-agentic-workflow-trust@v1
+
+      - name: ECZ-ID Passport Bootstrap
+        uses: EcoCitizenz-Ltd/eczid-passport-bootstrap@v1
+        with:
+          family: ${{ inputs.passport_family }}
+          mode: check
+          parent-ecz-id: ${{ inputs.parent_ecz_id }}
