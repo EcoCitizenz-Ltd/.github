@@ -1,6 +1,6 @@
 {
   "name": "ECZ-ID Counterparty Gate",
   "description": "Re-check declared counterparty identity/currentness evidence while keeping missing identity neutral.",
-  "iconName": "octicon-verified",
+  "iconName": "octicon verified",
   "categories": ["Security", "Automation"]
 }
