@@ -1,6 +1,6 @@
 {
   "name": "ECZ-ID Release Identity & Provenance",
   "description": "Connect release identity to native GitHub provenance and current ECZ-ID evidence without replacing GitHub attestations.",
-  "iconName": "octicon-package-dependencies",
+  "iconName": "octicon package-dependencies",
   "categories": ["Security", "Deployment", "Continuous integration"]
 }
