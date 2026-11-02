@@ -4,6 +4,33 @@
 
 EcoCitizenz Ltd builds ECZ-ID: resolver-first identity, authority, state and evidence infrastructure for MCP servers, AI agents, APIs, software and the wider machine economy.
 
+## Try ECZ-ID now — run a website check from GitHub Actions
+
+No ECZ-ID account or API key is required. Add this workflow to any repository, replace `example.org` with a public website you want to observe, and run it manually from the **Actions** tab.
+
+```yaml
+name: ECZ-ID Website Security
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  eczid:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - uses: EcoCitizenz-Ltd/eczid-website-security@v1
+        with:
+          website: https://example.org
+```
+
+The check preserves UNKNOWN evidence and does not turn an observation into a security, compliance or approval guarantee. [See Website Security inputs, outputs and privacy boundary](https://github.com/EcoCitizenz-Ltd/eczid-website-security) or [browse all 13 ECZ-ID GitHub Actions](#run-ecz-id-directly-in-github-actions).
+
 ## Start with the problem you need to solve
 
 | I need to... | Start here |
