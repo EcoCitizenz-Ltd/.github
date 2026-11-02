@@ -1,0 +1,30 @@
+name: ECZ-ID Workflow Trust Dogfood
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/**'
+      - 'workflow-templates/**'
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+      - 'workflow-templates/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  workflow-trust:
+    name: Review organisation workflow trust
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: ECZ-ID Workflow Trust
+        uses: EcoCitizenz-Ltd/eczid-workflow-trust@v1
+        with:
+          report-path: eczid-workflow-trust.json
