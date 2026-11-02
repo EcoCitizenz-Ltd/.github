@@ -1,0 +1,27 @@
+name: ECZ-ID Developer Trust Product Boundary
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'DEVELOPER_TRUST_PRODUCT_BOUNDARY.md'
+      - 'scripts/validate-developer-trust-product-boundary.mjs'
+      - '.github/workflows/developer-trust-product-boundary.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  product-boundary:
+    name: Prevent Developer Trust product drift
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out organisation policy repository
+        uses: actions/checkout@v4
+
+      - name: Validate public Developer Trust product boundaries
+        run: node scripts/validate-developer-trust-product-boundary.mjs
