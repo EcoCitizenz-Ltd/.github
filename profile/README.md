@@ -35,7 +35,7 @@ The check preserves UNKNOWN evidence and does not turn an observation into a sec
 
 | I need to... | Start here |
 |---|---|
-| Get identity for a machine I operate | [Choose a free ECZ-ID Passport](https://developers.ecocitizenz.com/get-started/free-passport/?utm_source=github&utm_medium=organization&utm_campaign=free-passports&utm_content=problem-router) |
+| Get identity for a machine I operate | [Choose a free ECZ-ID Passport](https://developers.ecocitizenz.com/get-started/free-passport/?utm_source=github&utm_medium=organization&utm_campaign=free-passports&utm_content=problem-router&ecz_source=github&ecz_surface=organization-profile&intent=free-passport) |
 | Inspect an MCP server | [MCP Security Toolkit](https://github.com/EcoCitizenz-Ltd/eczid-mcp-security-toolkit) |
 | Understand what an AI agent can reach | [Agent Authority Toolkit](https://github.com/EcoCitizenz-Ltd/eczid-agent-authority-toolkit) |
 | Establish organisational machine identity | [Business Passport & Machine Identity](https://github.com/EcoCitizenz-Ltd/eczid-business-passport-machine-identity) |
@@ -44,7 +44,7 @@ The check preserves UNKNOWN evidence and does not turn an observation into a sec
 | Review software / SBOM evidence | [Software Supply Chain Evidence](https://github.com/EcoCitizenz-Ltd/eczid-software-supply-chain-evidence) |
 | Assess MCP production readiness | [MCP Readiness](https://github.com/EcoCitizenz-Ltd/eczid-mcp-readiness) |
 | Review API identity | [API Passport Starter](https://github.com/EcoCitizenz-Ltd/eczid-api-passport-starter) |
-| Manage machine trust across customer estates | [Run the free MSP / MSSP Machine Trust Check](https://msp.ecocitizenz.com/trust-check?utm_source=github&utm_medium=organization&utm_campaign=msp-machine-trust&utm_content=problem-router) |
+| Manage machine trust across customer estates | [Run the free MSP / MSSP Machine Trust Check](https://msp.ecocitizenz.com/trust-check?utm_source=github&utm_medium=organization&utm_campaign=msp-machine-trust&utm_content=problem-router&ecz_source=github&ecz_surface=organization-profile&intent=msp-machine-trust-check) |
 
 ---
 
@@ -75,7 +75,7 @@ All 13 public ECZ-ID Actions are Marketplace-listed and independently consumer-s
 | Produce a deterministic evidence pack for QBR / vCISO review | [MSP Evidence & QBR Pack](https://github.com/EcoCitizenz-Ltd/eczid-msp-evidence-qbr-pack) |
 | Compare current machine-trust evidence with an approved baseline | [MSP Standard Drift](https://github.com/EcoCitizenz-Ltd/eczid-msp-standard-drift) |
 
-Need persistent identity for the machine or service behind the evidence? [Choose the right free Passport](https://developers.ecocitizenz.com/get-started/free-passport/?utm_source=github&utm_medium=organization&utm_campaign=github-actions&utm_content=action-router). The path is Parent-first: use the existing Business Passport Parent or create the free Declared Parent, then issue the relevant free child Passport.
+Need persistent identity for the machine or service behind the evidence? [Choose the right free Passport](https://developers.ecocitizenz.com/get-started/free-passport/?utm_source=github&utm_medium=organization&utm_campaign=github-actions&utm_content=action-router&ecz_source=github&ecz_surface=organization-profile&intent=free-passport). The path is Parent-first: use the existing Business Passport Parent or create the free Declared Parent, then issue the relevant free child Passport.
 
 ---
 
@@ -83,7 +83,7 @@ Need persistent identity for the machine or service behind the evidence? [Choose
 
 ECZ-ID currently provides free Passport journeys for **Agent, MCP, Plugin, API, IoT, SDK, and Service & Workload**. The live acquisition journey takes no payment and creates a free Business Passport when an organisation does not already have one.
 
-[**Choose the right free Passport →**](https://developers.ecocitizenz.com/get-started/free-passport/?utm_source=github&utm_medium=organization&utm_campaign=free-passports&utm_content=primary-cta)
+[**Choose the right free Passport →**](https://developers.ecocitizenz.com/get-started/free-passport/?utm_source=github&utm_medium=organization&utm_campaign=free-passports&utm_content=primary-cta&ecz_source=github&ecz_surface=organization-profile&intent=free-passport)
 
 A free Passport gives a machine a persistent identity and public location for current-state checking. It does not mean verified, assured, safe, secure, compliant, approved, certified or endorsed.
 
@@ -95,11 +95,11 @@ A free Passport gives a machine a persistent identity and public location for cu
 
 Start without an account or sales call:
 
-[**Run the free Machine Trust Check**](https://msp.ecocitizenz.com/trust-check?utm_source=github&utm_medium=organization&utm_campaign=msp-machine-trust&utm_content=free-check)
+[**Run the free Machine Trust Check**](https://msp.ecocitizenz.com/trust-check?utm_source=github&utm_medium=organization&utm_campaign=msp-machine-trust&utm_content=free-check&ecz_source=github&ecz_surface=organization-profile&intent=msp-machine-trust-check)
 
 Need a human-reviewed starting record for the disclosed client estate?
 
-[**Review the £395 Client-Estate Machine Trust Baseline**](https://msp.ecocitizenz.com/audit?utm_source=github&utm_medium=organization&utm_campaign=msp-machine-trust&utm_content=baseline)
+[**Review the £395 Client-Estate Machine Trust Baseline**](https://msp.ecocitizenz.com/audit?utm_source=github&utm_medium=organization&utm_campaign=msp-machine-trust&utm_content=baseline&ecz_source=github&ecz_surface=organization-profile)
 
 Prefer technical resources first?
 
@@ -113,17 +113,17 @@ Prefer technical resources first?
 
 **See what your MCP can do. See what changed. Protect the ones that matter.**
 
-[Install / explore MCP Trust](https://developers.ecocitizenz.com/mcp-trust?utm_source=github&utm_medium=organization&utm_campaign=mcp-trust&utm_content=cta)
+[Install / explore MCP Trust](https://developers.ecocitizenz.com/mcp-trust?utm_source=github&utm_medium=organization&utm_campaign=mcp-trust&utm_content=cta&ecz_source=github&ecz_surface=organization-profile)
 
 ### Agent Trust
 
 **See what your AI agent can reach before you let it act.**
 
-[Install / explore Agent Trust](https://developers.ecocitizenz.com/agent-trust?utm_source=github&utm_medium=organization&utm_campaign=agent-trust&utm_content=cta)
+[Install / explore Agent Trust](https://developers.ecocitizenz.com/agent-trust?utm_source=github&utm_medium=organization&utm_campaign=agent-trust&utm_content=cta&ecz_source=github&ecz_surface=organization-profile)
 
 ### MCP + Agent
 
-[Explore Developer Trust](https://developers.ecocitizenz.com/developer-trust?utm_source=github&utm_medium=organization&utm_campaign=developer-trust&utm_content=bundle)
+[Explore Developer Trust](https://developers.ecocitizenz.com/developer-trust?utm_source=github&utm_medium=organization&utm_campaign=developer-trust&utm_content=bundle&ecz_source=github&ecz_surface=organization-profile)
 
 ---
 
@@ -148,13 +148,13 @@ Prefer technical resources first?
 
 20 practical checks before you connect an MCP server or let an AI agent act.
 
-[Download the free Preflight](https://developers.ecocitizenz.com/downloads/eczid-mcp-agent-trust-preflight.pdf?utm_source=github&utm_medium=organization&utm_campaign=preflight&utm_content=download)
+[Download the free Preflight](https://developers.ecocitizenz.com/downloads/eczid-mcp-agent-trust-preflight.pdf?utm_source=github&utm_medium=organization&utm_campaign=preflight&utm_content=download&ecz_source=github&ecz_surface=organization-profile)
 
 ---
 
 ## Professional MCP Services
 
-[Explore MCP services](https://mcp.ecocitizenz.com?utm_source=github&utm_medium=organization&utm_campaign=mcp-services&utm_content=cta)
+[Explore MCP services](https://mcp.ecocitizenz.com?utm_source=github&utm_medium=organization&utm_campaign=mcp-services&utm_content=cta&ecz_source=github&ecz_surface=organization-profile)
 
 ---
 
